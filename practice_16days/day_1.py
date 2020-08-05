@@ -49,4 +49,19 @@ for string in a:
     else:
         print("%s은 처음과 끝에 사용하여 여러줄의 문자열을 만듭니다." %string)    
 
-print("="*50)    #문자열 종료        
+print("="*50)    #문자열 종료
+
+#operator_to_use(string)
+#더하거나 곱할 수 있다.
+#문자열의 순서는 0부터 센다.
+
+a = ["len(x)","x[num]","x[num:num]"]
+for operator in a:
+    if operator in ["len(x)"]:
+        print("%s는 문자열의 길이를 구하는 함수입니다." %operator)
+    elif operator in ["x[num]"]:
+        print("%s는 문자열에서 특정위치의 문자를 구하는 함수입니다." %operator)  
+    else:
+        print("%s는 문자열을 앞의 num에서부터 뒤의 num 이전까지 자르는 함수입니다." %operator)      
+
+print("="*50)    #문자열 연산자 종료        
