@@ -36,3 +36,17 @@ for Operator in a:
 
 print("="*50)    #연산자 종료   
                 
+#Data_type(string)
+
+a = "'",'"',str('"'*3),str("'"*3)
+for string in a:
+    if string in ["'"]:
+        print("%s는 \"을 문장내에 쓸때 양 옆으로 사용하여 문자열을 만듭니다." %string)
+    elif string in ['"']:
+        print("%s는 \'을 문장내에 쓸때 양 옆으로 사용하여 문자열을 만듭니다." %string) 
+    elif string in [str('"'*3)]:
+        print("%s은 처음과 끝에 사용하여 여러줄의 문자열을 만듭니다." %string)           
+    else:
+        print("%s은 처음과 끝에 사용하여 여러줄의 문자열을 만듭니다." %string)    
+
+print("="*50)    #문자열 종료        
