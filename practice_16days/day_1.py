@@ -13,7 +13,26 @@ for number in a:
     else:
         print("%s 은/는 16진수입니다.(알파벳 x의 대,소문자는 무관합니다.)" %number)        
 
-print("=" * 50)   #숫자형 종료
+print("=" * 50)    #숫자형 종료
 
+#Operator_to_use(number)
 
+a = ["+","-","/","*","**","%","//"]
+for Operator in a:
+    if Operator in ["+"]:
+        print("%s는 더하기 입니다." %Operator)
+    elif Operator in ["-"]:
+        print("%s는 빼기 입니다." %Operator)    
+    elif Operator in ["/"]:
+        print("%s는 나누기 입니다." %Operator) 
+    elif Operator in ["*"]:
+        print("%s는 곱하기 입니다." %Operator)   
+    elif Operator in ["**"]:  
+        print("%s는 앞수에 뒷수를 제곱한 연산자입니다." %Operator)  
+    elif Operator in ["%"]:
+        print("%s는 나눗셈후 나머지를 반환하는 연산자입니다." %Operator)   
+    else:
+        print("%s는 나눗셈후 몫을 반환하는 엽산자입니다." %Operator)             
+
+print("="*50)    #연산자 종료   
                 
