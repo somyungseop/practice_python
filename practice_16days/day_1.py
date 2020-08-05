@@ -1,4 +1,4 @@
-#Data type_number
+#Data_type(number)
 
 a = [3,3.14,"4.24E10","0o177","0x177"]
 for number in a:
