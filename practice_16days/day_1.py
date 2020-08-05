@@ -13,7 +13,7 @@ for number in a:
     else:
         print("%s 은/는 16진수입니다.(알파벳 x의 대,소문자는 무관합니다.)" %number)        
 
-print(=*55)   #숫자형 종료
+print("=" * 50)   #숫자형 종료
 
 
                 
