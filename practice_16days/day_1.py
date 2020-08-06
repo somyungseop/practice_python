@@ -18,21 +18,21 @@ print("=" * 50)    #숫자형 종료
 #Operator_to_use(number)
 
 a = ["+","-","/","*","**","%","//"]
-for Operator in a:
-    if Operator in ["+"]:
-        print("%s는 더하기 입니다." %Operator)
-    elif Operator in ["-"]:
-        print("%s는 빼기 입니다." %Operator)    
-    elif Operator in ["/"]:
-        print("%s는 나누기 입니다." %Operator) 
-    elif Operator in ["*"]:
-        print("%s는 곱하기 입니다." %Operator)   
-    elif Operator in ["**"]:  
-        print("%s는 앞수에 뒷수를 제곱한 연산자입니다." %Operator)  
-    elif Operator in ["%"]:
-        print("%s는 나눗셈후 나머지를 반환하는 연산자입니다." %Operator)   
+for operator in a:
+    if operator in ["+"]:
+        print("%s는 더하기 입니다." %operator)
+    elif operator in ["-"]:
+        print("%s는 빼기 입니다." %operator)    
+    elif operator in ["/"]:
+        print("%s는 나누기 입니다." %operator) 
+    elif operator in ["*"]:
+        print("%s는 곱하기 입니다." %operator)   
+    elif operator in ["**"]:  
+        print("%s는 앞수에 뒷수를 제곱한 연산자입니다." %operator)  
+    elif operator in ["%"]:
+        print("%s는 나눗셈후 나머지를 반환하는 연산자입니다." %operator)   
     else:
-        print("%s는 나눗셈후 몫을 반환하는 엽산자입니다." %Operator)             
+        print("%s는 나눗셈후 몫을 반환하는 엽산자입니다." %operator)             
 
 print("="*50)    #연산자 종료   
                 
@@ -62,6 +62,23 @@ for operator in a:
     elif operator in ["x[num]"]:
         print("%s는 문자열에서 특정위치의 문자를 구하는 함수입니다." %operator)  
     else:
-        print("%s는 문자열을 앞의 num에서부터 뒤의 num 이전까지 자르는 함수입니다." %operator)      
+        print("%s는 문자열을 앞의 num에서부터 뒤의 num 이전까지 자르는 함수입니다." %operator )      
 
-print("="*50)    #문자열 연산자 종료        
+print("="*50)    #문자열 연산자 종료     
+
+#formating_function
+#문자열 포메팅
+#문자열의 특정한 값을 바꿈
+
+a = ["%s","%c","%d","%%"]
+for formatingcode in a:
+    if formatingcode in ["%s"]:
+        print("%s는 문자열을 대입할때 사용하는 함수입니다." %formatingcode) 
+    elif formatingcode in ["%c"]:
+        print("%s는 문자 1개를 대입할때 사용하는 함수입니다." %formatingcode) 
+    elif formatingcode in ["%d"]:
+        print("%s는 정수를 대입할때 사용하는 함수입니다." %formatingcode) 
+    else:
+        print("%s는 %%자체를 대입할때 사용하는 함수입니다." %formatingcode)              
+
+print("="*50)    #포매팅 함수 종료
